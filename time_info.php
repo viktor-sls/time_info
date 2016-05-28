@@ -161,7 +161,7 @@ if( ($shared_sec -= 32400) > 0) {
 		else if($flag==0)
 		{
 			$size=2;
-			?><td bgcolor="gray"><font size="<?=$sizeg?>" color="black"><?=$idx?></font></td><?php
+			?><td bgcolor="gray"><font size="<?=$size?>" color="black"><?=$idx?></font></td><?php
 		}
 		else
 		{
@@ -191,11 +191,11 @@ if( ($shared_sec -= 32400) > 0) {
 		else if($flag == 0)
 		{
 			$size = 1;
-			?><td bgcolor="gray"><font size="<?=$size_flag?>" color="black"><?=$idx?></font></td><?php
+			?><td bgcolor="gray"><font size="<?=$size?>" color="black"><?=$idx?></font></td><?php
 		}
 		else
 		{
-			?><td bgcolor="black"><font size="<?=$size_flag?>" color="lightgray"><?=$idx?></font></td><?php
+			?><td bgcolor="black"><font size="<?=$size?>" color="lightgray"><?=$idx?></font></td><?php
 		}
 	}
 	?>
