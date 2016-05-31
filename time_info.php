@@ -51,18 +51,19 @@ if( ($shared_sec -= 32400) > 0) {
 
 ?>
 
-Сейчас: <b> <?=date('Y-M-d H:i:s', $current_time)?></b><p>
-<h2>Завтра надо проснуться в <?=date('H:i', $time_woke_up)?>
-<?php
-	if ("" != $sleep_count) {
-		echo ", спать осталось: ", $sleep_count;
-	}
+<div id="head">
+	Сейчас: <b> <?=date('Y-M-d H:i:s', $current_time)?></b><p>
+	Завтра надо проснуться в <?=date('H:i', $time_woke_up)?>
+	<?php
+		if ("" != $sleep_count) {
+			echo ", спать осталось: ", $sleep_count;
+		}
 
-	if ("" != $be_awake_count) {
-		echo "<br>Бодрствовать осталось: ", $be_awake_count;
-	}
-?>
-</h2>
+		if ("" != $be_awake_count) {
+			echo "<br>Бодрствовать осталось: ", $be_awake_count;
+		}
+	?>
+</div>
 
 <p>
 <table width="100%" border="1" cellspacing="0" cellpadding="0">
